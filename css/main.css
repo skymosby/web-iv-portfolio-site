@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.logo {
+	height: 4rem;
+	width: 5rem;
+	background-color: grey;
+	margin: 0 auto;
+}
+.icon {
+	height: 2rem;
+	width: 2rem;
+	background-color: grey;
+	margin: 0 auto;
+}
+.small {
+	height: 10rem;
+	width: 100%;
+	background-color: grey;
+	margin-bottom: 1rem;
+}
+.large {
+	height: 20rem;
+	width: 100%;
+	background-color: grey;
+	margin-bottom: 1rem;
+}
+.small-6 {
+	text-align:center;
+}
+.row {
+	margin-top: 2rem;
+}
+footer p {
+	text-align: center;
+	margin-top: 1rem;
+}
+footer {
+	border: .25rem solid grey;
+	margin-top: 2rem;
+}
+
+nav a:hover {
+	background-color: grey;
+	padding: .5rem 1rem;
+	color: white;
+}
