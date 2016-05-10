@@ -25,6 +25,12 @@
 	background-color: grey;
 	margin-bottom: 1rem;
 }
+.so-large {
+	height: 32rem;
+	width: 100%;
+	background-color: grey;
+	margin-bottom: 1rem;
+}
 .small-6 {
 	text-align:center;
 }
@@ -44,4 +50,72 @@ nav a:hover {
 	background-color: grey;
 	padding: .5rem 1rem;
 	color: white;
+}
+.line-through {
+	text-decoration:line-through;
+}
+section {
+	margin-top: 10rem;
+}
+.txt-rgt {
+	text-align:right;
+}
+.tall, .medium, .short {
+	background-color: grey;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.tall {
+	height: 700px;
+}
+.medium {
+	height: 500px;
+}
+.short {
+	height: 300px;
+}
+
+
+/*-------------- Media Query for MEDIUM --------------*/
+
+@media only screen and (min-width:  40em) {
+.large, .small {
+	height: 15rem;
+}
+.larger-medium {
+	height: 30rem;
+}
+.mgn-top {
+	margin-top: 15rem;
+}
+.small, .large, .larger-medium {
+	margin-bottom: 2rem;
+}
+nav {
+	text-align:left;
+}
+
+
+}
+
+/*-------------- Media Query for LARGE --------------*/
+
+@media only screen and (min-width:  64em) {
+	
+.nav-side {
+	position:fixed;
+	left:0;
+	top:50%;
+	transform: rotate(90deg);
+}
+#nav-contact {
+	position:fixed;
+	right:0;
+	top: 50%;
+	transform: rotate(90deg);
+}
+.row {
+	max-width: 80%;
+}
+	
 }
