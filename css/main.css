@@ -1,6 +1,41 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/* -=-=-=-=-=-=-=-=- Table of Contents -=-=-=-=-=-=-=-=- */
+
+	/* ~`~`~`~`~`~ Margin and Padding ~`~`~`~`~`~ */
+	/* ~`~`~`~`~`~ Dimensions ~`~`~`~`~`~ */
+	/* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
+	/* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
+	/* -----------------Hover Image Overlay Effect----------------- */
+	/*-------------- Media Query for MEDIUM --------------*/
+	/*-------------- Media Query for LARGE --------------*/
+
+
+
+/* ~`~`~`~`~`~ Margin and Padding ~`~`~`~`~`~ */
+.icon, .logo{
+	margin: 0 auto;
+}
+.large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.row, footer {
+	margin-top: 2rem;
+}
+footer p {
+	margin-top: 1rem;
+}
+nav a:hover {
+	padding: .5rem 1rem;
+	color: white;
+}
+section {
+	margin-top: 10rem;
+}
+/* ~`~`~`~`~`~ Dimensions ~`~`~`~`~`~ */
 .logo {
 	height: 4rem;
 	width: 5rem;
@@ -9,58 +44,14 @@
 	height: 2rem;
 	width: 2rem;
 }
-.icon, .logo{
-	margin: 0 auto;
-}
-.icon, .logo, nav a:hover, .small, .large, .so-large {
-	background-color: grey;
-}
 .small {
 	height: 10rem;
-	width: 100%;
-	margin-bottom: 1rem;
 }
 .large {
 	height: 20rem;
-	width: 100%;
-	margin-bottom: 1rem;
 }
 .so-large {
 	height: 32rem;
-	width: 100%;
-	margin-bottom: 1rem;
-}
-.small-6 {
-	text-align: center;
-}
-.row {
-	margin-top: 2rem;
-}
-footer p {
-	text-align: center;
-	margin-top: 1rem;
-}
-footer {
-	border: .25rem solid grey;
-	margin-top: 2rem;
-}
-nav a:hover {
-	padding: .5rem 1rem;
-	color: white;
-}
-.line-through {
-	text-decoration: line-through;
-}
-section {
-	margin-top: 10rem;
-}
-.txt-rgt {
-	text-align: right;
-}
-.tall, .medium, .short {
-	background-color: grey;
-	width: 100%;
-	margin-bottom: 30px;
 }
 .tall {
 	height: 700px;
@@ -71,6 +62,22 @@ section {
 .short {
 	height: 300px;
 }
+/* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
+.icon, .logo, nav a:hover, .small, .large, .so-large, .tall, .medium, .short {
+	background-color: grey;
+}
+footer {
+	border: .25rem solid grey;
+}
+/* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
+.small-6, footer p {
+	text-align: center;
+}
+.txt-rgt {
+	text-align: right;
+}
+
+
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
 	width: 100%;
@@ -78,7 +85,7 @@ section {
 	border: 1px solid rgba(0, 0, 0, 0.04);
 	overflow: hidden;
 	position: relative;
-	text-align: center;
+	text-align: right;
 }
 .image-overlay-content {
 	width: 100%;
@@ -109,9 +116,6 @@ section {
 	transition: all 0.2s ease-in-out;
 	margin-top: 1rem;
 }
-.overlay-fade-in .button:hover {
-	box-shadow: 0 0 5px #000;
-}
 .overlay-fade-in:hover img {
 	transform: scale(1.2);
 }
@@ -120,12 +124,12 @@ section {
 }
 .overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
 	opacity: 1;
+	margin-right:1rem;
 }
 .overlay-fade-in:hover p {
 	transition-delay: 0.1s;
-}
-.overlay-fade-in:hover .button {
-	transition-delay: 0.2s;
+	font-size: 1rem;
+	line-height: .5rem;
 }
 
 
