@@ -4,35 +4,34 @@
 .logo {
 	height: 4rem;
 	width: 5rem;
-	background-color: grey;
-	margin: 0 auto;
 }
 .icon {
 	height: 2rem;
 	width: 2rem;
-	background-color: grey;
+}
+.icon, .logo{
 	margin: 0 auto;
+}
+.icon, .logo, nav a:hover, .small, .large, .so-large {
+	background-color: grey;
 }
 .small {
 	height: 10rem;
 	width: 100%;
-	background-color: grey;
 	margin-bottom: 1rem;
 }
 .large {
 	height: 20rem;
 	width: 100%;
-	background-color: grey;
 	margin-bottom: 1rem;
 }
 .so-large {
 	height: 32rem;
 	width: 100%;
-	background-color: grey;
 	margin-bottom: 1rem;
 }
 .small-6 {
-	text-align:center;
+	text-align: center;
 }
 .row {
 	margin-top: 2rem;
@@ -45,20 +44,18 @@ footer {
 	border: .25rem solid grey;
 	margin-top: 2rem;
 }
-
 nav a:hover {
-	background-color: grey;
 	padding: .5rem 1rem;
 	color: white;
 }
 .line-through {
-	text-decoration:line-through;
+	text-decoration: line-through;
 }
 section {
 	margin-top: 10rem;
 }
 .txt-rgt {
-	text-align:right;
+	text-align: right;
 }
 .tall, .medium, .short {
 	background-color: grey;
@@ -73,6 +70,62 @@ section {
 }
 .short {
 	height: 300px;
+}
+/* -----------------Hover Image Overlay Effect----------------- */
+.image-wrapper {
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.image-overlay-content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.overlay-fade-in p {
+	color: #f4f4f4;
+	font-size: 28px;
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+.overlay-fade-in img {
+	transition: all 0.2s linear;
+}
+.overlay-fade-in .image-overlay-content {
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: all 0.4s ease-in-out;
+}
+.overlay-fade-in h2 {
+	color: #f2f2f2;
+	font-size: 1.8rem;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	margin-top: 1rem;
+}
+.overlay-fade-in .button:hover {
+	box-shadow: 0 0 5px #000;
+}
+.overlay-fade-in:hover img {
+	transform: scale(1.2);
+}
+.overlay-fade-in:hover .image-overlay-content {
+	opacity: 1;
+}
+.overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
+	opacity: 1;
+}
+.overlay-fade-in:hover p {
+	transition-delay: 0.1s;
+}
+.overlay-fade-in:hover .button {
+	transition-delay: 0.2s;
 }
 
 
@@ -92,30 +145,26 @@ section {
 	margin-bottom: 2rem;
 }
 nav {
-	text-align:left;
+	text-align: left;
 }
-
-
 }
 
 /*-------------- Media Query for LARGE --------------*/
 
 @media only screen and (min-width:  64em) {
-	
 .nav-side {
-	position:fixed;
-	left:0;
-	top:50%;
+	position: fixed;
+	left: 0;
+	top: 50%;
 	transform: rotate(90deg);
 }
 #nav-contact {
-	position:fixed;
-	right:0;
+	position: fixed;
+	right: 0;
 	top: 50%;
 	transform: rotate(90deg);
 }
 .row {
 	max-width: 80%;
 }
-	
 }
