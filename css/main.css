@@ -32,8 +32,8 @@ nav a:hover {
 	padding: .5rem 1rem;
 	color: white;
 }
-section {
-	margin-top: 10rem;
+section, footer {
+	margin-top: 2rem;
 }
 /* ~`~`~`~`~`~ Dimensions ~`~`~`~`~`~ */
 .logo {
@@ -132,6 +132,28 @@ footer {
 	line-height: .5rem;
 }
 
+.off-canvas-content {
+	box-shadow:none;
+}
+
+.off-canvas.position-left {
+	left: -70%;
+	top: 0;
+	width:70%;
+	
+}
+.is-open-left {
+	transform: translateX(70%);
+}
+.is-open-right {
+
+              transform: translateX(-70%); }
+			  
+			  
+  .off-canvas.position-right {
+    right: -70%;
+    top: 0;
+    width: 70%; }
 
 /*-------------- Media Query for MEDIUM --------------*/
 
@@ -150,6 +172,9 @@ footer {
 }
 nav {
 	text-align: left;
+}
+section {
+	margin-top: 3rem;
 }
 }
 
@@ -170,5 +195,8 @@ nav {
 }
 .row {
 	max-width: 80%;
+}
+section, footer {
+	margin-top: 7rem;
 }
 }
