@@ -44,24 +44,6 @@ section, footer {
 	height: 2rem;
 	width: 2rem;
 }
-.small {
-	height: 10rem;
-}
-.large {
-	height: 20rem;
-}
-.so-large {
-	height: 32rem;
-}
-.tall {
-	height: 700px;
-}
-.medium {
-	height: 500px;
-}
-.short {
-	height: 300px;
-}
 /* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
 .icon, .logo, nav a:hover, .small, .large, .so-large, .tall, .medium, .short {
 	background-color: grey;
@@ -80,6 +62,9 @@ img {
 	text-align: right;
 }
 
+.identity {
+	max-width: 50px;
+}
 
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
@@ -158,6 +143,7 @@ img {
     top: 0;
     width: 70%; }
 
+
 /*-------------- Media Query for MEDIUM --------------*/
 
 @media only screen and (min-width:  40em) {
@@ -168,7 +154,7 @@ img {
 	height: 30rem;
 }
 .mgn-top {
-	margin-top: 15rem;
+	margin-top: 30px;
 }
 .small, .large, .larger-medium {
 	margin-bottom: 2rem;
@@ -178,6 +164,9 @@ nav {
 }
 section {
 	margin-top: 3rem;
+}
+.margin-top {
+	margin-top: 16.5%;
 }
 }
 
