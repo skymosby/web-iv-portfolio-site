@@ -5,9 +5,10 @@
 /* -=-=-=-=-=-=-=-=- Table of Contents -=-=-=-=-=-=-=-=- */
 
 	/* ~`~`~`~`~`~ Margin and Padding ~`~`~`~`~`~ */
-	/* ~`~`~`~`~`~ Dimensions ~`~`~`~`~`~ */
 	/* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
 	/* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
+	/* ~`~`~`~`~`~ IMG ~`~`~`~`~`~ */
+	/* ~`~`~`~`~`~ Anchors and States ~`~`~`~`~`~ */
 	/* -----------------Hover Image Overlay Effect----------------- */
 	/*-------------- Media Query for MEDIUM --------------*/
 	/*-------------- Media Query for LARGE --------------*/
@@ -15,8 +16,11 @@
 
 
 /* ~`~`~`~`~`~ Margin and Padding ~`~`~`~`~`~ */
-.icon, .logo{
+.icon, footer .identity {
 	margin: 0 auto;
+}
+.identity {
+	margin: 20px auto;
 }
 .large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
 	width: 100%;
@@ -35,24 +39,21 @@ nav a:hover {
 section, footer {
 	margin-top: 2rem;
 }
-/* ~`~`~`~`~`~ Dimensions ~`~`~`~`~`~ */
-.logo {
-	height: 4rem;
-	width: 5rem;
-}
-.icon {
-	height: 2rem;
-	width: 2rem;
-}
 /* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
-.icon, .logo, nav a:hover, .small, .large, .so-large, .tall, .medium, .short {
-	background-color: grey;
-}
 footer {
-	border: .25rem solid grey;
+	background-color:white;
+	padding: 1rem;
 }
 img {
 	width: 100%;
+}
+#body, .off-canvas-content, .off-canvas {
+	background-color: rgba(27, 115, 137, 0.1);
+	border: .75rem solid white;
+}
+.white-band {
+	background-color: white;
+	padding-top: 1rem;
 }
 /* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
 .small-6, footer p {
@@ -61,11 +62,41 @@ img {
 .txt-rgt {
 	text-align: right;
 }
+* {
+	font-family: 'Poppins', sans-serif;
+}
+#big-hello, h1, h2, .button {
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	font-weight:bolder;
+}
+#big-hello, h1 {
+	font-size: 2rem;
+	color: rgb(27, 115, 137);
+}
+p {
+	line-height: 1.8rem;
+	font-weight: light;
+	color: #616B6B;
+}
+/* ~`~`~`~`~`~ IMG ~`~`~`~`~`~ */
 
 .identity {
 	max-width: 50px;
+	display:block;
 }
-
+/* ~`~`~`~`~`~ Anchors and states ~`~`~`~`~`~ */
+.button, .button:hover {
+	background-color: transparent;
+	color: rgb(27, 115, 137);
+}
+.button:hover {
+	color: rgba(27, 115, 137, .6);
+}
+.icon {
+	min-width: 20px;
+	max-width: 30px;
+}
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
 	width: 100%;
@@ -85,16 +116,18 @@ img {
 }
 .overlay-fade-in p {
 	color: #f4f4f4;
-	font-size: 28px;
+	font-size: 1rem;
 	opacity: 0;
 	transition: all 0.2s linear;
+	margin-right:1rem;
+	line-height:.5rem;
 }
 .overlay-fade-in img {
 	transition: all 0.2s linear;
 }
 .overlay-fade-in .image-overlay-content {
 	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(27, 115, 137, 0.5);
 	transition: all 0.4s ease-in-out;
 }
 .overlay-fade-in h2 {
@@ -103,23 +136,24 @@ img {
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
 	margin-top: 1rem;
+	margin-right:1rem;
 }
 .overlay-fade-in:hover img {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 .overlay-fade-in:hover .image-overlay-content {
 	opacity: 1;
 }
 .overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
 	opacity: 1;
-	margin-right:1rem;
+	
 }
 .overlay-fade-in:hover p {
-	transition-delay: 0.1s;
-	font-size: 1rem;
-	line-height: .5rem;
+	transition-delay: 0.2s;
 }
 
+
+/* -----------------off canvas----------------- */
 .off-canvas-content {
 	box-shadow:none;
 }
