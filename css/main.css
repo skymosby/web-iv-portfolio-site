@@ -53,7 +53,7 @@ img {
 }
 .white-band {
 	background-color: white;
-	padding-top: 1rem;
+	padding-top: 1px;
 }
 /* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
 .small-6, footer p {
@@ -65,19 +65,30 @@ img {
 * {
 	font-family: 'Poppins', sans-serif;
 }
-#big-hello, h1, h2, .button {
+#big-hello, h1, h2, .button, .i-am {
 	text-transform: uppercase;
-	letter-spacing: .5rem;
 	font-weight:bolder;
+}
+
+#big-hello, h1, h2, .button {
+	letter-spacing: .5rem;
+}
+#big-hello, h1, .i-am, .button, .button:hover, #nav-right button:hover, #nav-left button:hover, #nav-right a:hover, #nav-left a:hover {
+	color: rgb(27, 115, 137);
 }
 #big-hello, h1 {
 	font-size: 2rem;
-	color: rgb(27, 115, 137);
 }
 p {
 	line-height: 1.8rem;
 	font-weight: light;
 	color: #616B6B;
+}
+#nav-left, #nav-right {
+	background-color: rgba(27, 115, 137, 0.8);
+}
+#nav-left button, #nav-right button, #nav-left a, #nav-right a {
+	color: white;
 }
 /* ~`~`~`~`~`~ IMG ~`~`~`~`~`~ */
 
@@ -88,7 +99,6 @@ p {
 /* ~`~`~`~`~`~ Anchors and states ~`~`~`~`~`~ */
 .button, .button:hover {
 	background-color: transparent;
-	color: rgb(27, 115, 137);
 }
 .button:hover {
 	color: rgba(27, 115, 137, .6);
@@ -97,6 +107,13 @@ p {
 	min-width: 20px;
 	max-width: 30px;
 }
+.button:hover {
+	lineheight: auto;
+	
+}
+#nav-left .button:hover {
+	padding: 12.24px 14px;
+}
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
 	width: 100%;
@@ -104,7 +121,7 @@ p {
 	border: 1px solid rgba(0, 0, 0, 0.04);
 	overflow: hidden;
 	position: relative;
-	text-align: right;
+	text-align: center;
 }
 .image-overlay-content {
 	width: 100%;
@@ -132,11 +149,10 @@ p {
 }
 .overlay-fade-in h2 {
 	color: #f2f2f2;
-	font-size: 1.8rem;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
-	margin-top: 1rem;
-	margin-right:1rem;
+	margin-top: 3rem;
+	letter-spacing: .0;
 }
 .overlay-fade-in:hover img {
 	transform: scale(1.1);
@@ -207,13 +223,13 @@ section {
 /*-------------- Media Query for LARGE --------------*/
 
 @media only screen and (min-width:  64em) {
-.nav-side {
+#nav-left {
 	position: fixed;
 	left: 0;
 	top: 50%;
 	transform: rotate(90deg);
 }
-#nav-contact {
+#nav-right {
 	position: fixed;
 	right: 0;
 	top: 50%;
@@ -224,5 +240,22 @@ section {
 }
 section, footer {
 	margin-top: 7rem;
+}
+.no-width {
+	width:100%;
+}
+#nav-left {
+	margin-left: -8%;
+}
+#nav-right {
+	margin-right:-7%;
+}
+#nav-right .button {
+	margin-bottom: 0;
+	padding-top: 30%;
+}
+#nav-left {
+	margin-top: 0;
+	padding-bottom: 4%;
 }
 }
