@@ -12,26 +12,24 @@
 </head>
 <body>
 <!-- *************** OFF CANVAS STUFF *************** -->
-<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper" id="top">
 <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
 	<!-- Close button -->
 	<button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
 	<section class="column small-12 medium-9" id="about">
-		<header>
-			<h2>About Me</h2>
-		</header>
-		<p><span class="i-am">I'm a drawer.</span> I realized this in kindergarten when the teacher handed out markers and construction paper. I remember my very first drawing was of a slide that I remembered seeing on the playground. I've spent most of my life pushing those drawing skills and it's been a tremendous gift when planning out design projects. Interpreting the world through illustration is something that fills me with unending joy.</p>
-		<p><span class="i-am">I'm a designer.</span> I find serenity in process work and design has taught me that there is always another step further; always a better solution one or twenty thumbnails away. As a designer I'm always learning and improving.</p>
+		<h2>About Me</h2>
+	<p><span class="i-am">I'm a communicator.</span> I like to tell unique stories and stir up emotions. Not only do I enjoy the visual language of design, I'm also fascinated by the language of web! In fact, this website was coded from scratch with HTML, CSS, and a little Javascript.</p>
+		<p><span class="i-am">I'm a drawer.</span> I realized this in kindergarten when the teacher handed out markers and construction paper. My very first drawing was of a slide that I remembered seeing on the playground. I've spent most of my life pushing those drawing skills and it's been a tremendous gift when planning out design projects. Interpreting the world through illustration is something that fills me with unending joy.</p>
+		<p><span class="i-am">I'm a designer.</span> I find serenity in process work. Design has taught me that there is always another step further; there's always a better solution one or twenty thumbnails away. As a designer I'm always learning and improving.</p>
 	</section>
 </div>
 <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
 	<!-- Close button -->
 	<button class="close-button" aria-label="Close menu" type="button" data-close> <span aria-hidden="true">&times;</span> </button>
 	<section class="columns small-12 medium-9">
-		<header id="contact">
-			<h2>Contact me!</h2>
-		</header>
+			<h2>Contact me</h2>
+			<p>Thank you for visiting my website! Whether you would like to contact me regarding a service I can provide you, or just want to leave a comment or question, I would love to hear from you.</p>
 		<form>
 			<div class="medium-6 columns">
 				<label>First Name
@@ -46,15 +44,18 @@
 			<div class="medium-12 column">
 				<label>I need a(n)...
 					<select>
-						<option value="husker">Corporate Identity (logo)</option>
-						<option value="starbuck">Illustration</option>
-						<option value="hotdog">Website</option>
-						<option value="apollo">Other</option>
+						<option value="corporate id">Corporate Identity</option>
+						<option value="illustration">Illustration</option>
+						<option value="website">Website</option>
+						<option value="publication">publication</option>
+						<option value="event">event branding</option>
+						<option value="package">package design</option>
+						<option value="other">Other</option>
 					</select>
 				</label>
 			</div>
 			<div class="columns medium-6">
-				<label>If "other," please indicate
+				<label>If "other," please indicate here
 					<input type="text" placeholder="I need a hotdog!">
 				</label>
 			</div>
@@ -68,9 +69,9 @@
 			</div>
 			<div class="column medium-12">
 				<label>Leave a message!
-					<textarea placeholder="I need a hotdog!" rows="3"></textarea>
+					<textarea placeholder="If you have any questions feel free to type them here. :)" rows="3"></textarea>
 				</label>
-				<div class="button"><a>Go!</a></div>
+				<a class="button">send</a>
 			</div>
 		</form>
 	</section>
@@ -84,15 +85,6 @@
 	
 	<!-- NAV -->
 <header>
-	<nav class="row no-width">
-		<div class="columns small-6 large-2" id="nav-left">
-			<button type="button" class="button" data-toggle="offCanvasLeft">About</button>
-		</div>
-		<div class="columns small-6 large-2" id="nav-right">
-			<button type="button" class="button" data-toggle="offCanvasRight">Contact</button>
-		</div>
-		<div class="medium-7"></div>
-	</nav>
 	<!-- comment -->
 	<div class="white-band">
 		<div class="row">
@@ -104,6 +96,15 @@
 			</div>
 		</div>
 	</div>
+	<nav class="row no-width">
+		<div class="columns small-6 large-2" id="nav-left">
+			<button type="button" class="button" data-toggle="offCanvasLeft">About</button>
+		</div>
+		<div class="columns small-6 large-2" id="nav-right">
+			<button type="button" class="button" data-toggle="offCanvasRight">Contact</button>
+		</div>
+		<div class="medium-7"></div>
+	</nav>
 </header>
 <div class="row">
 	<div class="margin-top columns small-6 medium-4 medium-offset-2">
@@ -142,11 +143,11 @@
 		</a>
 	</div>
 	<div class="columns small-6 medium-4">
-		<a href="work.html">
+		<a href="michaels.html">
 			<div class="image-wrapper overlay-fade-in">
 				<img src="img/thumb-michaels.jpg">
 				<div class="image-overlay-content">
-					<h2>Michaels</h2>
+					<h2>Michael's</h2>
 					<p>Annual Report</p>
 				</div>
 			</div>
@@ -231,7 +232,7 @@
 			<footer>
 				<div class="row">
 					<div class="columns small-4 small-offset-4"> 
-						<a href="index.html"> 
+						<a href="#top" class="smooth-scroll"> 
 							<img src="img/logo.png" class="identity">
 						</a> 
 					</div>
@@ -262,6 +263,34 @@
 <script src="js/vendor/foundation.js"></script>
 <script src="js/app.js"></script>
 <script>$(document).foundation();</script>
+<script src="js/jquery-1.12.1.min.js"></script>
+<!-- JS for smooth scroll --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script>
+	jQuery(document).ready(function($){
+		
+		// Smooth scroll home nav
+			$('.smooth-scroll').on('click', 'a', function(e) {
+				// prevent default anchor click behavior
+				e.preventDefault();
+			
+			   // store hash
+			   var hash = this.hash;
+				
+				$('html, body').animate({
+				   scrollTop: $(this.hash).offset().top-0
+				 }, 1500, function(){
+			
+				   // when done, add hash to url
+				   // (default click behaviour)
+				   window.location.hash = hash;
+				 });
+			
+			});
+	
+		
+	});
+	</script>
 </body>
 </html>
 
