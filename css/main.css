@@ -19,9 +19,6 @@
 .icon, footer .identity {
 	margin: 0 auto;
 }
-.identity {
-	margin: 20px auto;
-}
 .large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
 	width: 100%;
 	margin-bottom: 1rem;
@@ -39,6 +36,9 @@ nav a:hover {
 section, footer {
 	margin-top: 2rem;
 }
+.mgn-top {
+	margin-top: 30px;
+}
 /* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
 footer {
 	background-color:white;
@@ -52,15 +52,18 @@ img {
 	border: .75rem solid white;
 }
 .white-band {
+	border-top: .75rem solid rgba(27, 115, 137, 0.1);
+}
+footer {
+	border-bottom: .75rem solid rgba(27, 115, 137, 0.1);
+}
+.white-band {
 	background-color: white;
 	padding-top: 1px;
 }
 /* ~`~`~`~`~`~ Text ~`~`~`~`~`~ */
 .small-6, footer p {
 	text-align: center;
-}
-.txt-rgt {
-	text-align: right;
 }
 * {
 	font-family: 'Poppins', sans-serif;
@@ -81,7 +84,7 @@ img {
 }
 p {
 	line-height: 1.8rem;
-	font-weight: light;
+	font-weight: 100;
 	color: #616B6B;
 }
 #nav-left, #nav-right {
@@ -90,11 +93,18 @@ p {
 #nav-left button, #nav-right button, #nav-left a, #nav-right a {
 	color: white;
 }
+.txt-rgt, header {
+	text-align: center;
+} 
+h1{
+	line-height: 2rem;
+}
 /* ~`~`~`~`~`~ IMG ~`~`~`~`~`~ */
 
 .identity {
-	max-width: 50px;
+	max-width: 4rem;
 	display:block;
+	margin: 0px auto 40px auto;
 }
 /* ~`~`~`~`~`~ Anchors and states ~`~`~`~`~`~ */
 .button, .button:hover {
@@ -107,13 +117,12 @@ p {
 	min-width: 20px;
 	max-width: 30px;
 }
+
+
 .button:hover {
-	lineheight: auto;
-	
-}
-#nav-left .button:hover {
 	padding: 12.24px 14px;
 }
+
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
 	width: 100%;
@@ -136,7 +145,6 @@ p {
 	font-size: 1rem;
 	opacity: 0;
 	transition: all 0.2s linear;
-	margin-right:1rem;
 	line-height:.5rem;
 }
 .overlay-fade-in img {
@@ -144,15 +152,16 @@ p {
 }
 .overlay-fade-in .image-overlay-content {
 	opacity: 0;
-	background-color: rgba(27, 115, 137, 0.5);
+	background-color: rgba(27, 115, 137, 0.8);
 	transition: all 0.4s ease-in-out;
 }
 .overlay-fade-in h2 {
 	color: #f2f2f2;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
-	margin-top: 3rem;
+	margin-top: 4rem;
 	letter-spacing: .0;
+	font-size: 1rem;
 }
 .overlay-fade-in:hover img {
 	transform: scale(1.1);
@@ -203,9 +212,6 @@ p {
 .larger-medium {
 	height: 30rem;
 }
-.mgn-top {
-	margin-top: 30px;
-}
 .small, .large, .larger-medium {
 	margin-bottom: 2rem;
 }
@@ -217,6 +223,15 @@ section {
 }
 .margin-top {
 	margin-top: 16.5%;
+}
+header {
+	text-align: left;
+}
+.txt-rgt {
+	text-align: right;
+}
+.no-mgn-top {
+	margin-top:0;
 }
 }
 
