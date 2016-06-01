@@ -23,7 +23,7 @@
 	width: 100%;
 	margin-bottom: 1rem;
 }
-.row, footer {
+section, .row, footer {
 	margin-top: 2rem;
 }
 footer p {
@@ -31,10 +31,6 @@ footer p {
 }
 nav a:hover {
 	padding: .5rem 1rem;
-	color: white;
-}
-section, footer {
-	margin-top: 2rem;
 }
 .mgn-top {
 	margin-top: 30px;
@@ -70,13 +66,13 @@ footer {
 }
 #big-hello, h1, h2, .button, .i-am {
 	text-transform: uppercase;
-	font-weight:bolder;
+	font-weight:800;
 }
 
 #big-hello, h1, h2, .button {
 	letter-spacing: .5rem;
 }
-#big-hello, h1, .i-am, .button, .button:hover, #nav-right button:hover, #nav-left button:hover, #nav-right a:hover, #nav-left a:hover {
+#big-hello, h1, .i-am, .button, .button:hover, #nav-right button:hover, #nav-left button:hover, #nav-right a:hover, #nav-left a:hover, .off-canvas h2 {
 	color: rgb(27, 115, 137);
 }
 #big-hello, h1 {
@@ -90,7 +86,7 @@ p {
 #nav-left, #nav-right {
 	background-color: rgba(27, 115, 137, 0.8);
 }
-#nav-left button, #nav-right button, #nav-left a, #nav-right a {
+#nav-left button, #nav-right button, #nav-left a, #nav-right a, nav a:hover {
 	color: white;
 }
 .txt-rgt, header {
@@ -247,7 +243,7 @@ header {
 #nav-right {
 	position: fixed;
 	right: 0;
-	top: 50%;
+	top: 51%;
 	transform: rotate(90deg);
 }
 .row {
