@@ -83,8 +83,15 @@ p {
 	font-weight: 100;
 	color: #616B6B;
 }
-#nav-left, #nav-right {
+#nav-left, #nav-right, .submit-button {
 	background-color: rgba(27, 115, 137, 0.8);
+	border: none;
+}
+.submit-button {
+	padding: .5rem 1rem;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
 }
 #nav-left button, #nav-right button, #nav-left a, #nav-right a, nav a:hover {
 	color: white;
@@ -106,7 +113,7 @@ h1{
 .button, .button:hover {
 	background-color: transparent;
 }
-.button:hover {
+.button:hover, .submit-button:hover {
 	color: rgba(27, 115, 137, .6);
 }
 .icon {

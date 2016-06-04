@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
 <!-- *************** OFF CANVAS STUFF *************** -->
@@ -30,48 +31,27 @@
 	<section class="columns small-12 medium-9">
 			<h2>Contact me</h2>
 			<p>Thank you for visiting my website! Whether you would like to contact me regarding a service I can provide you, or just want to leave a comment or question, I would love to hear from you.</p>
-		<form>
+		<form method="post" action="contactengine.php">
 			<div class="medium-6 columns">
 				<label>First Name
-					<input type="text" placeholder="Jane">
+					<input type="text" placeholder="Jane" name="First" id="First">
 				</label>
 			</div>
 			<div class="medium-6 columns">
 				<label>Last Name
-					<input type="text" placeholder="Eyre">
+					<input type="text" placeholder="Eyre" name="Last" id="Last">
 				</label>
 			</div>
-			<div class="medium-12 column">
-				<label>I need a(n)...
-					<select>
-						<option value="corporate id">Corporate Identity</option>
-						<option value="illustration">Illustration</option>
-						<option value="website">Website</option>
-						<option value="publication">publication</option>
-						<option value="event">event branding</option>
-						<option value="package">package design</option>
-						<option value="other">Other</option>
-					</select>
-				</label>
-			</div>
-			<div class="columns medium-6">
-				<label>If "other," please indicate here
-					<input type="text" placeholder="I need a hotdog!">
-				</label>
-			</div>
-			<div class="columns medium-6">
-				<label>I am...
-					<select>
-						<option value="husker">An individual</option>
-						<option value="starbuck">A Business</option>
-					</select>
+			<div class="medium-6 columns">
+				<label>Email
+					<input type="text" placeholder="janeeyre@email.com" name="Email" id="Email">
 				</label>
 			</div>
 			<div class="column medium-12">
 				<label>Leave a message!
-					<textarea placeholder="If you have any questions feel free to type them here. :)" rows="3"></textarea>
+					<textarea placeholder="If you have any questions or comments feel free to type them here. :)" rows="3"  name="Message" id="Message"></textarea>
 				</label>
-				<a class="button">send</a>
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
 			</div>
 		</form>
 	</section>
@@ -92,7 +72,7 @@
 				<img src="img/logo.png" alt="sky logo" class="identity">
 			</div>
 			<div class="columns small-12 medium-6 medium-offset-4 txt-rgt">
-				<p><span id="big-hello">Hello,</span> My Name is Skylar Mosby, I’m a media artist with a passion for illustration and a flair for web design. I’ve devoted the last year and a half of my life to becoming the best designer I can be and I’m always kindling my passion to learn and grow.</p>
+				<p><span id="big-hello">Hello,</span> my Name is Skylar Mosby. I’m a media artist with a passion for illustration and a flair for web design. I’ve devoted the last year and a half of my life to becoming the best designer I can be, and I’m always kindling my passion to learn and grow.</p>
 			</div>
 		</div>
 	</div>
