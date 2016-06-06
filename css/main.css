@@ -20,7 +20,6 @@
 	margin: 0 auto;
 }
 .large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
-	width: 100%;
 	margin-bottom: 1rem;
 }
 section, .row, footer {
@@ -40,12 +39,12 @@ footer {
 	background-color:white;
 	padding: 1rem;
 }
-img {
+img, .large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
 	width: 100%;
 }
-#body, .off-canvas-content, .off-canvas {
+.off-canvas-content, .off-canvas, #border {
 	background-color: rgba(27, 115, 137, 0.1);
-	border: .75rem solid white;
+	border: .75rem solid rgba(27, 115, 137, .5);
 }
 .white-band {
 	background-color: white;
@@ -66,7 +65,7 @@ img {
 #big-hello, h1, h2, .button {
 	letter-spacing: .5rem;
 }
-#big-hello, h1, .i-am, .button, .button:hover, #nav-right button:hover, #nav-left button:hover, #nav-right a:hover, #nav-left a:hover, .off-canvas h2 {
+#big-hello, h1, .i-am, .button, .button:hover, #nav-right button:hover, #nav-left button:hover, #nav-right a:hover, #nav-left a:hover, .off-canvas h2, .mgn-top h2 {
 	color: rgb(27, 115, 137);
 }
 #big-hello, h1 {
@@ -95,6 +94,10 @@ p {
 } 
 h1{
 	line-height: 2rem;
+}
+.mgn-top h2 {
+	font-size:1rem;
+	letter-spacing:normal;
 }
 /* ~`~`~`~`~`~ IMG ~`~`~`~`~`~ */
 
