@@ -34,6 +34,13 @@ nav a:hover {
 .mgn-top {
 	margin-top: 30px;
 }
+#about {
+	float:left;
+	margin-bottom: 15px;
+}
+.button:hover {
+	padding: 12.24px 14px;
+}
 /* ~`~`~`~`~`~ Backgrounds and Borders ~`~`~`~`~`~ */
 footer {
 	background-color:white;
@@ -57,7 +64,7 @@ img, .large, .small, .so-large, .tall, .medium, .short, .tall, .medium, .short {
 * {
 	font-family: 'Poppins', sans-serif;
 }
-#big-hello, h1, h2, .button, .i-am {
+#big-hello, h1, h2, .button, .i-am, .submit-button {
 	text-transform: uppercase;
 	font-weight:800;
 }
@@ -83,7 +90,6 @@ p {
 .submit-button {
 	padding: .5rem 1rem;
 	color: white;
-	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
 #nav-left button, #nav-right button, #nav-left a, #nav-right a, nav a:hover {
@@ -119,9 +125,6 @@ h1{
 }
 
 
-.button:hover {
-	padding: 12.24px 14px;
-}
 
 /* -----------------Hover Image Overlay Effect----------------- */
 .image-wrapper {
@@ -245,13 +248,13 @@ header {
 #nav-left {
 	position: fixed;
 	left: 0;
-	top: 50%;
+	top: 50vh;
 	transform: rotate(90deg);
 }
 #nav-right {
 	position: fixed;
 	right: 0;
-	top: 51%;
+	top: 51vh;
 	transform: rotate(90deg);
 }
 .row {
